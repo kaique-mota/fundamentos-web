@@ -18,15 +18,15 @@
 
      <form>
         <label for="nome">Nome:</label><br>
-        <input type="text" id= "nome">
-        <br>
+        <input type="text" id= "nome" onkeyup='validaNome()'>
+        <div id="txtNome"></div>
         <br>
         <label for="email">Email:</label><br>
-        <input type="text" id= "email">
-        <br>
+        <input type="email" id= "email" onkeyup='validaEmail()'>
+        <div id="txtEmail"></div>
         <br>
         <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
         <br>
         <br>
         <button>Enviar</button>
@@ -37,4 +37,10 @@
      <a href="https://github.com/kaique-mota" target="_blank"><img src="https://temxi.com/minfo/logo/69/github-logo.png" width="190" height="150" class="media-object  img-responsive img-thumbnail"></a>
      <a href="https://www.linkedin.com/in/kaique-mota-424ab5214/" target="_blank"><img src="https://www.spiner.com.br/wp-content/uploads/2019/02/midias-sociais-linkedin-icon.png" width="150" height="150" class="media-object  img-responsive img-thumbnail"></a>
 </body>
+<footer>
+    <p>
+        siga-nos nas redes sociais
+    </p>
+</footer>
+<script src="assets/js/script.js"></script>
 </html>
