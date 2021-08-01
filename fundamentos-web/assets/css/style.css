@@ -1,0 +1,65 @@
+/* Estilos da página index.html*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    border: 1px solid red;
+    height: 100px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    background-color: black;
+    padding: 10px;
+}
+
+
+.botao{
+    -webkit-border-radius: 42;
+    -moz-border-radius: 42;
+    border-radius: 42px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    background: #e35e2d;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    }
+    
+    .botao:hover {
+    background: #ed3911;
+    text-decoration-color: none;
+}  
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color:white;
+}
+
+.imagem h1{
+
+}
+
+
+body{
+    background-color:white;
+    background-size: cover;
+}
