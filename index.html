@@ -1,96 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Studies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  </head>
-<body>
-  
-  <!-- navbar do site -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">
-          Wes Anderson World
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <title>Wes Anderson World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <body>
+<!-- Header -->
+
+<div id="header">
+  <div class="container">
+    <nav class="navbar navbar-transparent navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(255, 255, 255, 0.5);
+      background-blend-mode: darken;">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/imagens/SodaPDF-converted-logo_wes_anderson-removebg-preview (1).png" height="100">
         </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Filmes</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Mais
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Contato</a></li>
-                </ul>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#filme">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Contato</a>
+            </li>
+          </ul>
         </div>
-      </nav> 
-      
-      
-  <!-- carrossel do site -->
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://i.vimeocdn.com/video/451855247_960.jpg" class="d-block w-100" alt="...">
+    </nav>
+  </div>
+</div>
+
+<!--//Header -->
+
+<!--Slider -->
+
+<div id="slider">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-md-4 align-self-center text-center text-fluid mb-md-0 mb-4 pt-5">
+        <h1 class="title pt-5"> WES ANDERSON WORLD</h1>
+        <h4 class="mb-4">O fã site do diretor de cinema Wes Anderson</h4>
+        <a href="#" class= "btn button-primary button-dark button d-md-inline-block d-block mb-md-0 mb-2 mr-md-2 ">Sobre</a>
+        <a href="#" class="btn button-primary-outline btn-outline-dark button d-md-inline-block d-block">Contato</a>
       </div>
-      <div class="carousel-item">
-        <img src="https://i.vimeocdn.com/video/452086670_1280x720.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.vimeocdn.com/video/452332262_1280x720.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.vimeocdn.com/video/507537304_960.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.vimeocdn.com/video/507538258_1280x720.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.vimeocdn.com/video/452995997_1280x720.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.vimeocdn.com/video/452998993_1280x720.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.vimeocdn.com/video/507301647_1280x720.jpg" class="d-block w-100" alt="...">
+      <div class="col-md-8 ps-5 align-self-center text-center pt-5">
+        <img src="https://ih1.redbubble.net/image.1012200647.6614/pp,840x830-pad,1000x1000,f8f8f8.jpg" class="img-fluid">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+</div>
+
+<!--//Slider-->
+
+
+<!--Sobre-->
+<div id="sobre">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 ps-5 align-self-center text-center pt-5 order-md-1 order-2">
+       <img src="https://images.summitmedia-digital.com/spotph/images/2020/03/04/wes-anderson-films-inside-art-1583318170.jpg" width="470" class="img-fluid">
+      </div>
+      <div class="col-md-6 align-self-center text-fluid mb-md-0 mb-4 pb-1 pt-5 order-md-2 order-1">
+        <h2 class="title">Sobre o Diretor</h2>
+        <p id="sobre">
+          Os filmes de Wes Anderson formam um universo próprio e possuem muitas semelhanças, mas essas são responsáveis por os diferenciarem de qualquer produção de outro diretor. As técnicas variam e podem ser percebidas no enquadramento, direção de arte, diálogos e até mesmo na escolha dos atores.
+        </p>
+        <p>
+          A simetria é uma das características mais marcantes dos filmes de Wes Anderson, seja em planos com um único ator e um cenário simples, ou muitos personagens com uma paisagem recheada de detalhes.
+        </p>
+        <p>
+          O cineasta também costuma acompanhar os personagens andando com a câmera em um trilho, como um travelling ou tracking shot. Esse estilo de filmagem está presente em The Darjeeling Limited (2017), Moonrise Kingdom (2012) e mais.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--//Sobre-->
+
+<!--Filmes-->
+<div id="filmes" class="block">
+<div class="container pt-5">
+  <h2 class="title text-center mt-5 mb-5" id="filme">filmes</h2>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <a href="https://www.youtube.com/watch?v=7N8wkVA4_8s" target="_blank" class="destaque">
+      <div class="img-container mb-3">
+       <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/wes-ander-color-palettes/large/photo_2249_0-4.jpg?1384968217" class="img-fluid">
+      </div>
+      <h5 class="text-center">MOONRISE KINGDOM</h5>
+      <p class="text-center">Clique aqui para assistir ao trailler</p>
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <a href="https://www.youtube.com/watch?v=ZM76HA3m4qw" target="_blank" class="destaque">
+      <div class="img-container mb-3">
+       <img src="https://64.media.tumblr.com/fa86fc771ebaeeecfd4c60e7ef94ca3d/tumblr_n2svb76wha1rr2db7o2_500.jpg" class="img-fluid">
+      </div>
+      <h5 class="text-center">THE ROYAL TENENBAUMS</h5>
+      <p class="mb-0 text-center">Clique aqui para assistir ao trailler</p>
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <a href="https://www.youtube.com/watch?v=UpU0DZXTGA0" target= "_blank" class="destaque">
+      <div class="img-container mb-3">
+       <img src="https://laughingsquid.com/wp-content/uploads/2014/03/tumblr_n2mkm0i38a1tvvqeko1_500.jpg" class="img-fluid">
+      </div>
+      <h5 class="text-center">THE LIFE AQUATIC WITH STEVE ZISSOU</h5>
+      <p class="mb-0 text-center">Clique aqui para assistir ao trailler</p>
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <a href="https://www.youtube.com/watch?v=1Fg5iWmQjwk" target="_blank" class="destaque">
+      <div class="img-container mb-3">
+       <img src="https://laughingsquid.com/wp-content/uploads/2014/03/tumblr_n2bh1svDwb1tvvqeko1_500.jpg" class="img-fluid">
+      </div>
+      <h5 class="text-center">THE GRAND BUDAPEST HOTEL</h5>
+      <p class="mb-0 text-center">Clique aqui para assistir ao trailler</p>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
 
 
 
 
-    
+
+<!--//Filmes-->
 
 
 
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+   <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  </body>
 </html>
